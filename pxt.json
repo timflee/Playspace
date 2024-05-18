@@ -6,7 +6,8 @@
         "radio": "*",
         "microphone": "*",
         "midi": "github:microsoft/pxt-midi#v2.2.0",
-        "RingbitCar": "github:tinkertanker/pxt-ringbitcar#v3.1.5"
+        "RingbitCar": "github:tinkertanker/pxt-ringbitcar#v3.1.5",
+        "pxt-kitronik-zip-tile": "github:kitronikltd/pxt-kitronik-zip-tile#v0.1.2"
     },
     "files": [
         "main.blocks",
@@ -24,5 +25,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "pyprj"
+    "preferredEditor": "blocksprj"
 }
