@@ -8,7 +8,7 @@ tileDisplay.clear()
 tileDisplay.show()
 #control.wait_micros(1000000)
 # Binary number as a string
-ledMap = [
+ledMapZay = [
     "bppppppp",
     "pppppppp",
     "pppppppp",
@@ -18,15 +18,25 @@ ledMap = [
     "bppppppb",
     "bppppppp"]
 
-ledMapEve = [
+ledMapEve1 = [
     "pppppppp",
     "piiiiiip",
-    "prvrvivp",
-    "prvvivrp",
-    "prvivvrp",
-    "pvirvrvp",
-    "pvrrvvip",
+    "pibbbbip",
+    "pibggbip",
+    "pibggbip",
+    "pibbbbip",
+    "piiiiiip",
     "pppppppp"]
+
+ledMap = [
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw",
+    "roygbvpw"]
 
 ledMapSky = ["vvvvvvvv",
     "vrrrrrrv",
@@ -59,7 +69,7 @@ while i <= numRows - 1:
         j += 1
     j = 0
     i += 1
-tileDisplay.set_brightness(20)
+tileDisplay.set_brightness(30)
 tileDisplay.show()
 
 def on_forever():
