@@ -6,18 +6,27 @@ i = 0
 tileDisplay = Kitronik_Zip_Tile.create_zip_tile_display(1, 1, Kitronik_Zip_Tile.UBitLocations.HIDDEN)
 tileDisplay.clear()
 tileDisplay.show()
-control.wait_micros(1000000)
+#control.wait_micros(1000000)
 # Binary number as a string
 ledMap = [
-    "vvvvgvvv",
-    "vrrrrrrv",
-    "vrvrvvrv",
-    "vrvvvvrv",
-    "vrvvvvrv",
-    "vvrvvrvv",
-    "vvvrrvvv",
-    "vvvvvvvv"]
+    "bppppppp",
+    "pppppppp",
+    "pppppppp",
+    "pbbppppp",
+    "pppbpppp",
+    "pppppppp",
+    "bppppppb",
+    "bppppppp"]
 
+ledMapEve = [
+    "pppppppp",
+    "piiiiiip",
+    "prvrvivp",
+    "prvvivrp",
+    "prvivvrp",
+    "pvirvrvp",
+    "pvrrvvip",
+    "pppppppp"]
 
 ledMapSky = ["vvvvvvvv",
     "vrrrrrrv",

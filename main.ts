@@ -7,9 +7,10 @@ let i = 0
 let tileDisplay = Kitronik_Zip_Tile.createZIPTileDisplay(1, 1, Kitronik_Zip_Tile.UBitLocations.Hidden)
 tileDisplay.clear()
 tileDisplay.show()
-control.waitMicros(1000000)
+// control.wait_micros(1000000)
 //  Binary number as a string
-let ledMap = ["vvvvgvvv", "vrrrrrrv", "vrvrvvrv", "vrvvvvrv", "vrvvvvrv", "vvrvvrvv", "vvvrrvvv", "vvvvvvvv"]
+let ledMap = ["bppppppp", "pppppppp", "pppppppp", "pbbppppp", "pppbpppp", "pppppppp", "bppppppb", "bppppppp"]
+let ledMapEve = ["pppppppp", "piiiiiip", "prvrvivp", "prvvivrp", "prvivvrp", "pvirvrvp", "pvrrvvip", "pppppppp"]
 let ledMapSky = ["vvvvvvvv", "vrrrrrrv", "vrvrvvrv", "vrvvvvrv", "vrvvvvrv", "vvrvvrvv", "vvvrrvvv", "vvvvvvvv"]
 let colourOrder = ["r", "b", "g", "w", "0", "i", "o", "p", "v", "y"]
 let colours = [Kitronik_Zip_Tile.colors(ZipLedColors.Red), Kitronik_Zip_Tile.colors(ZipLedColors.Blue), Kitronik_Zip_Tile.colors(ZipLedColors.Green), Kitronik_Zip_Tile.colors(ZipLedColors.White), Kitronik_Zip_Tile.colors(ZipLedColors.Black), Kitronik_Zip_Tile.colors(ZipLedColors.Indigo), Kitronik_Zip_Tile.colors(ZipLedColors.Orange), Kitronik_Zip_Tile.colors(ZipLedColors.Purple), Kitronik_Zip_Tile.colors(ZipLedColors.Violet), Kitronik_Zip_Tile.colors(ZipLedColors.Yellow)]
