@@ -1,15 +1,14 @@
-j = 0
 # A 2D array defines the leds to turn on/off with a letter for the colour to use.
 # 
 # This is then automagically passed and the zip tile colours set accordingly
 i = 0
+j = 0
 tileDisplay = Kitronik_Zip_Tile.create_zip_tile_display(1, 1, Kitronik_Zip_Tile.UBitLocations.HIDDEN)
 tileDisplay.clear()
 tileDisplay.show()
-#control.wait_micros(1000000)
+# control.wait_micros(1000000)
 # Binary number as a string
-ledMapZay = [
-    "bppppppp",
+ledMapZay = ["bppppppp",
     "pppppppp",
     "pppppppp",
     "pbbppppp",
@@ -17,9 +16,7 @@ ledMapZay = [
     "pppppppp",
     "bppppppb",
     "bppppppp"]
-
-ledMapEve1 = [
-    "pppppppp",
+ledMapEve1 = ["pppppppp",
     "piiiiiip",
     "pibbbbip",
     "pibggbip",
@@ -27,9 +24,7 @@ ledMapEve1 = [
     "pibbbbip",
     "piiiiiip",
     "pppppppp"]
-
-ledMap = [
-    "roygbvpw",
+ledMapEve2 = ["roygbvpw",
     "roygbvpw",
     "roygbvpw",
     "roygbvpw",
@@ -37,7 +32,14 @@ ledMap = [
     "roygbvpw",
     "roygbvpw",
     "roygbvpw"]
-
+ledMap = ["b00r0000",
+    "0b0r0000",
+    "00br0000",
+    "000i0000",
+    "wwwpbwww",
+    "000r0b00",
+    "yyyoyygy",
+    "000r000b"]
 ledMapSky = ["vvvvvvvv",
     "vrrrrrrv",
     "vrvrvvrv",
